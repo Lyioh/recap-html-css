@@ -1,1 +1,14 @@
+/*==================== BODY ==========================*/
+body{
+    font-family: sans-serif;
+}
 
+/*===================== FOOTER =========================*/
+footer {
+    background-color: #E0D4CA;
+}
+
+.infoFooter{
+    display: inline-block;
+    margin-left: 20%;
+}
