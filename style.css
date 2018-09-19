@@ -1,14 +1,42 @@
 /*==================== BODY ==========================*/
 body{
     font-family: sans-serif;
+    margin: auto;
+    width: 1000px;
+}
+ /*===========================  Grille Principale =============== */
+.Main {
+    display: grid;
+    height: 800px;
+    background-color: #FAFAFA;
+    grid-template-columns: 75% 25%;
 }
 
+/*=========================== Colonne Gauche ===================== */
+.leftSide {
+    display: grid;
+}
+
+.leftSide p {
+    font-size: 120%;
+    font-weight: 1000;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+}
+
+/*========================= Colonne Droite =========================*/
+.rightSide {
+    display: grid;
+}
 /*===================== FOOTER =========================*/
 footer {
-    background-color: #E0D4CA;
+    background-color: #F5F5F5;
+    text-align: center;
 }
 
 .infoFooter{
     display: inline-block;
-    margin-left: 20%;
+    padding-left: 9%;
 }
+
