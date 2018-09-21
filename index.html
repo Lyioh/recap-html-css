@@ -13,7 +13,7 @@
 <body>
     <!------------------Header---------------->
     <header>
-        <img src="logoVelo.png" class="logo">
+        <img src="images/logoVelo.png" class="logo">
         <p>Velo cité</p>
         <div class="boutons">
             <!-------- Bouton Service------->
@@ -22,11 +22,11 @@
             </div>
             <!-------- Bouton Musée------->
             <div class="museum">
-                <p>Le Musée</p>
+                <a href="#carrousel"><p>La gallerie</p></a>
             </div>
             <!-------- Bouton Contact------->
             <div class="contact">
-                <p>Contact</p>
+                <a href="#contactForm"><p>Contact</p></a>
             </div>
         </div>
     </header>
@@ -44,8 +44,8 @@
             par
             téléphone.</p>
 
-            <!-/----------------------------- COntact Form ------------------------------->
-        <form action="submit">
+            <!------------------------------- COntact Form ------------------------------->
+        <form action="submit" id="contactForm">
             <fieldset>
                 <legend>contact form:</legend>
                 <input type="radio" name="gender" value="male" checked> Male<br>
@@ -66,6 +66,16 @@
                 <input type="submit" value="Submit"><br><br>
             </fieldset>
         </form>
+    </div>
+
+    <div id="carrousel">
+        <figure>
+            <img src="images/acceuil.jpg" alt="acceuil">
+            <img src="images/bmx.jpg" alt="bmx">
+            <img src="images/carlos.jpg" alt="Carlos">
+            <img src="images/exterieur.jpg" alt="Devanture">
+            <img src="images/skate.jpg" alt="Skate">
+        </figure>
     </div>
     <!---------------Footer------------------->
     <footer>
