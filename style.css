@@ -1,23 +1,106 @@
 /*==================== BODY ==========================*/
 body{
     font-family: sans-serif;
-    margin: auto;
+    margin: 0 auto;
     width: 1000px;
 }
- /*===========================  Grille Principale =============== */
+
+/*=================================================== HEADER ===================================================== */
+header {
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    background-color: #FCFCFC;
+    border-radius: 10px;       
+    height: 150px;
+    position: fixed;  /* sticky */
+    width: 1000px;
+}
+
+/*----------------- Le logo --------------- */
+
+.logo {
+    height: 150px;
+}
+
+/*---------------- Le titre ----------------- */
+header p {
+    grid-area: 1 / 2 / 2 /3;
+    justify-self: center;
+    align-self: center;
+    font-size: 90px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+/*-------------------- Grid Boutons ----------------- */
+.boutons {
+    display: grid;
+    grid-template-rows: repeat(3 , 1fr);
+}
+/*------------ Design Bouton ------------------- */
+.services, .museum, .contact {
+    display: block;
+    background-color: #457DD3; 
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    /*align-self: center;*/
+    justify-self: center;
+    width: 50%;
+    border-radius: 50%;
+}
+
+/*------------------ Bouton Service ------------------- */
+.services:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.services {
+    align-self: center;
+}
+
+.services p {
+    font-size: medium;
+    font-size: 25px;
+}
+/*----------------- Bouton Musée ------------------- */
+.museum {
+    align-self: center;
+}
+
+.museum:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.museum p {
+    font-size: medium;
+    font-size: 25px;
+}
+/*----------------- Bouton Contact ----------------- */
+.contact {
+    align-self: center;
+}
+
+.contact:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.contact p {
+    font-size: medium;
+    font-size: 25px;
+}
+ /*======================================  Grille Principale ================================================== */
 .Main {
     display: grid;
-    height: 800px;
+    height: 5000px;
     background-color: #FAFAFA;
     grid-template-columns: 75% 25%;
+    border-radius: 10px;
 }
 
-/*=========================== Colonne Gauche ===================== */
-.leftSide {
-    display: grid;
-}
-
-.leftSide p {
+ /*-----------------Design Text ----------------- */
+ .Main p {
     font-size: 120%;
     font-weight: 1000;
     margin-left: 10%;
@@ -25,14 +108,12 @@ body{
     margin-top: 10%;
 }
 
-/*========================= Colonne Droite =========================*/
-.rightSide {
-    display: grid;
-}
+
 /*===================== FOOTER =========================*/
 footer {
     background-color: #F5F5F5;
     text-align: center;
+    border-radius: 10px;
 }
 
 .infoFooter{
