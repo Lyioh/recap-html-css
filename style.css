@@ -24,7 +24,7 @@ header {
 
 /*---------------- Le titre ----------------- */
 header p {
-    grid-area: 1 / 2 / 2 /3;
+   /* grid-area: 1 / 2 / 2 /3;*/
     justify-self: center;
     align-self: center;
     font-size: 90px;
@@ -97,6 +97,7 @@ header p {
     background-color: #FAFAFA;
     grid-template-columns: 75% 25%;
     border-radius: 10px;
+    padding-top: 160px;
 }
 
  /*-----------------Design Text ----------------- */
