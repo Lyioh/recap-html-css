@@ -1,12 +1,13 @@
 body {
-    background: gray url(images/fondVelo.png) repeat 0 0;
+    background:  url(images/fondVelo.png) repeat 0 0;
     width: 100%;
-    margin: 0;
+    margin: 0 auto;
     text-align: center;
     height: 300px;
-    padding-top: 120px;
+    padding-top: 50px;
     box-sizing: border-box;
     -webkit-animation: slide 20s linear infinite;
+    
 }
 .homepage {
     font-size: 100px;
@@ -24,13 +25,18 @@ body {
     margin: 0 auto;
     font-family: 'Lobster', cursive;
     font-size: 150px;
-
 }
 .item2 {
-    grid-area: 4/1/5/4;
+    grid-area: 3/1/4/4;
     font-size: 20px !important;
     margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    width: 80%;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+
 
 }
 @keyframes zoomOutDown {
@@ -52,7 +58,7 @@ body {
       animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
     }
   }
-.fa-home:active {
+.fa-home:hover {
     animation-name: zoomOutDown;
     animation-duration: 2s;
 } 
