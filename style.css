@@ -266,6 +266,7 @@ fieldset {
 .api {
     grid-area: 3 / 2 / 4 / 3;
     align-self: center;
+    filter: grayscale(50%);
 }
 
 
