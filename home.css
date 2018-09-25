@@ -1,18 +1,17 @@
 body {
-    background: gray url(images/fondVelo.png) repeat 0 0;
+    background: url("images/fondVelo.png") repeat 0 0;
     margin: 0 auto;
-    text-align: center;
     padding-top: 50px;
-    -webkit-animation: slide 20s linear infinite;
-    animation: slide 20s linear infinite;
+    -webkit-animation: backSlide 20s linear infinite;
+    animation: backSlide 20s linear infinite;
 }
 
-@-webkit-keyframes slide {
+@-webkit-keyframes backSlide {
     from { background-position: 0 0; }
     to { background-position: -400px 0; }
 }
 
-@keyframes slide {
+@keyframes backSlide {
     from { background-position: 0 0; }
     to { background-position: -400px 0; }
 }
