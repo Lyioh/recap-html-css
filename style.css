@@ -1,20 +1,39 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /*==================== BODY ==========================*/
 body{
+    background: url("images/fondVelo.png") repeat 0 0;
     font-family: 'Black Han Sans', sans-serif;
     margin: 0 auto;
     width: 1000px;
+    -webkit-animation: backSlide 20s linear infinite;
+    animation: backSlide 20s linear infinite;
 }
+
+@-webkit-keyframes backSlide {
+    from { background-position: 0 0; }
+    to { background-position: -400px 0; }
+}
+
+@keyframes backSlide {
+    from { background-position: 0 0; }
+    to { background-position: -400px 0; }
+}
+
 
 /*=================================================== HEADER ===================================================== */
 header {
     display: grid;
     grid-template-columns: 50% 50%;
     background-color: #000000;      
-  /*  height: 150px;*/
     position: fixed;
     width: 1000px;
     z-index: 1;
     opacity: 0.8;
+    height: 10%;
+    border-radius: 20px;
 }
 
 /*----------------- Le logo --------------- */
@@ -98,10 +117,10 @@ header h1 {
  /*======================================  Grille Principale ================================================== */
 .grille  {
     display: grid;
-    background-color: #FAFAFA;
     grid-template-rows: auto auto auto;
     grid-template-columns: 60% 40%;
     border-radius: 10px;
+    padding-top: 30px;
 }
  /*-----------------Design Text ----------------- */
  .grille p {
