@@ -14,7 +14,7 @@ html {
 
 body{
     background: url("images/fondVelo.png") repeat 0 0;
-    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0 auto;
     width: 1000px;
     -webkit-animation: backSlide 20s linear infinite;
@@ -31,7 +31,10 @@ body{
     to { background-position: -400px 0; }
 }
 
-
+.titre {
+    font-family: 'Lobster', cursive;
+    font-size: 70px;
+}
 /*=================================================== HEADER ===================================================== */
 header {
     display: grid;
@@ -200,6 +203,9 @@ header h1 {
 
 .horaire {
     align-self: center;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
 }
 
 /*------------------------- Grille galerie ------------------------ */
@@ -247,6 +253,7 @@ header h1 {
 .contact {
     grid-area:  3 / 1 / 4 / 2;
     color: #B90000;
+    font-family: 'Francois One', sans-serif;
 }
 
 fieldset {
@@ -264,7 +271,7 @@ fieldset {
 
 /*===================== FOOTER =========================*/
 footer {
-    background-color: #F5F5F5;
+    background-color: rgba(0, 0, 0, 0.1);
     text-align: center;
     border-radius: 10px;
 }
