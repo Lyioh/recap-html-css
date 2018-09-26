@@ -281,4 +281,7 @@ footer {
     display: inline-block;
     padding-left: 9%;
 }
+span {
+    background-color: rgb(255, 255, 0);
+}
 
